@@ -1,0 +1,29 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(python monitor_and_email.py --help)",
+      "Bash(python -c \"import sys; print(''编码:'', sys.stdout.encoding)\")",
+      "Bash(set PYTHONIOENCODING=utf-8)",
+      "Bash(chcp:*)",
+      "Bash(wsl:*)",
+      "Bash(wsl -- ls -la)",
+      "Bash(python monitor_and_email.py test)",
+      "Bash(\"D:\\CS\\New Folder\\venv\\Scripts\\python.exe\" -c \"import sys; sys.path.insert(0, r''D:\\CS\\New Folder''); from monitor_and_email import test_email_config; test_email_config()\")",
+      "Bash(\"D:\\CS\\New Folder\\venv\\Scripts\\python.exe\" -c \"import sys; sys.path.insert(0, r''D:\\CS\\New Folder''); from monitor_and_email import test_email_config; test_email_config()\")",
+      "Bash(ls -la)",
+      "Bash(python3 -c \"\nimport sys\nfrom pathlib import Path\n\nBASE_DIR = Path(''.'').resolve()\nGROUPS_FILE = BASE_DIR / ''groups.txt''\nUSERS_FILE = BASE_DIR / ''users.txt''\n\n# 创建群组文件\nif not GROUPS_FILE.exists():\n    GROUPS_FILE.write_text(''# 群组（每行一个）\\n# 例子：\\n# mygroup\\n# -1001234567890\\n'', encoding=''utf-8'')\n    print(''已创建 groups.txt'')\n\n# 创建用户文件\nif not USERS_FILE.exists():\n    USERS_FILE.write_text(''# 私聊目标（每行一个）\\n# 例子：\\n# @username\\n# 123456789\\n'', encoding=''utf-8'')\n    print(''已创建 users.txt'')\n\")",
+      "Bash(git init)",
+      "Bash(git add .)",
+      "Bash(git commit:*)",
+      "Bash(git add:*)",
+      "Bash(python -m py_compile \"D:\\CS\\New Folder\\monitor_and_email.py\")",
+      "Bash(python \"D:\\CS\\New Folder\\test_env_validation.py\")",
+      "Bash(rm \"D:\\CS\\New Folder\\test_env_validation.py\")",
+      "Bash(ls -la \"D:\\CS\\New Folder\")",
+      "Bash(rm \"D:\\CS\\New Folder\\monitor_session.session\")",
+      "Bash(cp -r \"D:\\CS\\New Folder\" \"D:\\CS\\telegram_backup\")",
+      "Bash(rm -rf \"D:\\CS\\New Folder\\.git\")"
+    ],
+    "deny": []
+  }
+}
